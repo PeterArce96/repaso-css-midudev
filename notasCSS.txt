@@ -1,0 +1,5 @@
+CSS
+(Cascading Style Sheets), hojas de estilo en casacada. Es un lenguaje de diseño y estilado para describir la presentación de un documento. 1996
+Primer navegador en darle soporte, Internet Explorer 3.
+Cascada, forma en que se aplican las reglas de css al documento. Se tiene que tener en cuenta el orden en q se ponen las reglas. 
+Especificidad, un estilo sea más importante que otro.
