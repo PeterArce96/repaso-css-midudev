@@ -10,3 +10,12 @@ SEMÁNTICA DE CSS
             propiedad: valor; /* Declaración */
         }
     </style>
+
+HERENCIA
+Algunas propiedades como color, font-family, etc. Se heredan desde los elementos HTML
+Otros como el border no se heredan, salvo pongas el "inherit"
+Valores especiales de la HERENCIA
+initial --> establece el valor inicial definido por las especificaciones de css.
+unset --> resetear el valor
+revert --> revertir el valor de la herencia
+inherit --> forzar el valor de la herencia
