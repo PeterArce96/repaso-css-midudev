@@ -24,9 +24,10 @@
         /* Selector básico, por etiqueta HTML, pero esto le da estilos a todos los h1 que tenga el documento */
         h1{
             color: #09f; /* #0099ff, algunos se acortan a 3 digitos, como un shortcut*/
-            border-width: 3px;
+
+            /* border-width: 3px;
             border-style: solid;
-            border-color: currentColor;
+            border-color: currentColor; */
             /* Current color- valor que ahora mismo tiene el texto de este elemento, como tiene un color azul, el borde toma ese color*/
 
             /*color: rgb(0 0 0 / 50%);/*Moderno*/
@@ -43,6 +44,10 @@
             /*color: oklch(348 83% 44% / 50%);/*recién ha salido, la escala de colores es mayor*/
             /*color: transparent; /*funciona no solo en texto, tambien en background, etc*/
         }
+        /* Selector por Clase (.) */
+        .link{
+            color: red;
+        }
 
         body{
             background-color: wheat;
@@ -58,9 +63,9 @@
         <h1>otro h1</h1>
 
         <nav>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#proyectos">Proyectos</a>
-            <a 
+            <a class="link" href="#experiencia">Experiencia</a>
+            <a class="link" href="#proyectos">Proyectos</a>
+            <a class="link" 
                 href="https://www.twitch.tv/midudev"
                 target="_blank"
                 rel="noreferrer"
