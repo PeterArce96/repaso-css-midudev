@@ -51,12 +51,22 @@
             color: red;
         }
         /* Pseudoclase */
+        /* hover: cuando se pasa el puntero del mouse por encima del elemento */
         .link:hover{
             /* Diferencia entre border y outline 
             borde - afecta al contenido, al ancho o alto
             outline - contorno que se dibuja encima del contenido, no cambia el ancho*/
             /* border: solid 3px green; */
             outline: 3px solid green;
+        }
+        /* active: cuando se hace clic en el elemento */
+        .link:active{
+            outline: 3px solid blue;
+        }
+
+        /* focus: cuando tenga el foco, cuando haces clic en un input */
+        link:focus{
+            border: 15px solid cornflowerblue;
         }
 
 
