@@ -3,3 +3,10 @@ CSS
 Primer navegador en darle soporte, Internet Explorer 3.
 Cascada, forma en que se aplican las reglas de css al documento. Se tiene que tener en cuenta el orden en q se ponen las reglas. 
 Especificidad, un estilo sea más importante que otro.
+
+SEMÁNTICA DE CSS
+    <style>
+        selector{
+            propiedad: valor; /* Declaración */
+        }
+    </style>
