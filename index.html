@@ -23,7 +23,19 @@
     <style>
         /* Selector básico, por etiqueta HTML, pero esto le da estilos a todos los h1 que tenga el documento */
         h1{
-            color: blue;
+            /*color: rgb(0 0 0 / 50%);/*Moderno*/
+            /* color: hsl(348, 80%, 44%); */
+            /* h, matíz, s de saturación y l de luminosidad (los colores son en base hsl*/
+
+            /* color: rgba(0, 0, 0, 10%); */
+            /* rgba por canales (ya no es recomendable), el primer dígito es canal del rojo, el segundo canal del verde, el tercero canal de azul y el último dígito es la opacidad */
+
+            color: #000000;
+
+            /* color: #00000055; los 2 últimos hexadecimales dan transparencia (55)*/
+
+            /*color: oklch(348 83% 44% / 50%);/*recién ha salido, la escala de colores es mayor*/
+            /*color: transparent; /*funciona no solo en texto, tambien en background, etc*/
         }
 
         body{
