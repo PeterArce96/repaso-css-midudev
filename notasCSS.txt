@@ -19,3 +19,12 @@ initial --> establece el valor inicial definido por las especificaciones de css.
 unset --> resetear el valor
 revert --> revertir el valor de la herencia
 inherit --> forzar el valor de la herencia
+
+Cáscada
+CSS lee las líneas de arriba hacia abajo, entonces si hay estilos del mismo selector y la misma propiedad, se toma el que está más abajo porque es como sobreescribirlo. En este caso tomaría el segundo por encontrarse después
+p{
+    color: #fff;
+}
+p{
+    color: #000;
+}
