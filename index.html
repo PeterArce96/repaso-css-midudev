@@ -83,9 +83,13 @@
         .hijoDirecto > p{
             color: blue;
         }
-        /*  Operador hermano siguiente "~", todo clase .footer que esté después de un "p" se estilan*/
+        /*  Operador hermano siguiente "~", todo clase .footer que esté después de un "p" en el mismo nivel se estilan, así haya otra etiqueta entre ellos*/
         p ~ .footer{
             color: red;
+        }
+        /* Operador inmediatamente después "+", solo se estila el siguiente elemento, si hay otro elemento entre ellos. Pierde el estilo, o si hay uno igual al siguiente después. Este no se estila, solo el primero que es el inmediatamente después*/
+        p + .footer{
+            color: blue;
         }
 
         /* Selector por ID */
@@ -176,7 +180,8 @@
 
         <article class="hijoDirecto">
             <p>Este es el contenido del artículo</p>
-
+            <!-- <code>Hola</code> -->
+            <!-- agregado para diferenciar entre (~) y (+) del css-->
             <footer class="footer">
                 <p>Escrito por midudev</p>
             </footer>
