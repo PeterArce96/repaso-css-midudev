@@ -42,3 +42,6 @@ Z: Elementos y pseudoelementos
 .description #text(1,1,0) > a #text(1,0,1) > #text(1,0,0)
 
 Los estilos en línea en el mismo HTML, tienen mayor especificidad, pero es MALA PRÁCTICA.
+
+Forma de saltarse la especificidad
+(!important) en la propiedad, se salta todo tipo de especificidad, si hay varios !important en la misma propiedad y selector, se toma en cuenta otra vez la especificidad y controles. NO ES RECOMENDABLE USARLO.
