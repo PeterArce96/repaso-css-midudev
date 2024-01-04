@@ -28,3 +28,17 @@ p{
 p{
     color: #000;
 }
+
+ESPECIFICIDAD 
+Css tiene un algoritmo que tiene la coincidencia más fuerte, que tan específico es el selector por encima del general, así se encuentra más abajo o después.
+
+(X, Y, Z)
+X: ID's
+Y: Classes, atributos, pseudoclases
+Z: Elementos y pseudoelementos
+
+#text (1,0,0) > .text (0,1,0) > p (0,0,1)
+
+.description #text(1,1,0) > a #text(1,0,1) > #text(1,0,0)
+
+Los estilos en línea en el mismo HTML, tienen mayor especificidad, pero es MALA PRÁCTICA.
