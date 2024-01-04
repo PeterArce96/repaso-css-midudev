@@ -83,6 +83,10 @@
         .hijoDirecto > p{
             color: blue;
         }
+        /*  Operador hermano siguiente "~", todo clase .footer que esté después de un "p" se estilan*/
+        p ~ .footer{
+            color: red;
+        }
 
         /* Selector por ID */
         /* No es recomendable diseñar por ID, ya que se va a reutilizar y repetir estilos */
@@ -90,7 +94,6 @@
             background: #09f;
             color: white;
         }
-
 
 
         .description{
@@ -174,7 +177,7 @@
         <article class="hijoDirecto">
             <p>Este es el contenido del artículo</p>
 
-            <footer>
+            <footer class="footer">
                 <p>Escrito por midudev</p>
             </footer>
         </article>
