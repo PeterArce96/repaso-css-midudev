@@ -69,13 +69,19 @@
             border: 15px solid cornflowerblue;
         }
 
+        /* Selectores combinados ul li */
         /* first:child : para que los estilos solo afecten al primer hijo*/
-        li:first-child{
+        ul li:first-child{
             color: pink;
         }
         /* last:child : para que los estilos solo afecten al último hijo*/
-        li:last-child{
+        ul li:last-child{
             color: purple;
+        }
+
+        /* Con el simbolo de ">" se refiera al hijo directo de esta etiqueta */
+        .hijoDirecto > p{
+            color: blue;
         }
 
         /* Selector por ID */
@@ -164,6 +170,14 @@
             alt="foto de midudev mirando a la izquierda"
             >
         </a>
+
+        <article class="hijoDirecto">
+            <p>Este es el contenido del artículo</p>
+
+            <footer>
+                <p>Escrito por midudev</p>
+            </footer>
+        </article>
         
 
         <h2 id="proyectos">Proyectos realizados</h2>
