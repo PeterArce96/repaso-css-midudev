@@ -123,14 +123,22 @@
         /* Modelo de caja */
         .container2{
             background-color: cornflowerblue;
+            width: 160px;
+            height: 160px;
             /* padding - cuando se aplica 
             1 solo valor, se estilan los 4 clados 
             2 valores, el primer valor aplica arriba y abajo, el segundo valor aplica izquierda y derecha
             3 valores, el primer aplica arriba, el segundo derecha e izquierda, el tercero abajo
             4 valores, a los 4 lados comenzando de arriba,derecha, abajo, izquierda. Como el reloj*/
-            padding: 10px 8px 6px 4px;
+            padding: 10px;
             border: 10px solid red;
             /* El padding y el border afectan al ancho de la caja. El margin no porque es el exterior de la caja */
+
+            /* Propiedad box-sizing 
+            Se utiliza para que las propiedades de padding y border de la caja estén contenidos al tamaño de la caja y no le aumenten.*/
+            /* Si colocamos el valor de content-box, sel contenido de la caja ocupa todo el ancho y alto que nosotros le damos, en este caso 160px.
+            Si colocamos el valor border-box, todo lo que esté adentro del borde (contenido, padding y borde) ocupa el ancho y alto que le damos */
+            box-sizing: border-box;
         }
     </style>
 
