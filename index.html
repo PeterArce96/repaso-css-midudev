@@ -140,6 +140,19 @@
             Si colocamos el valor border-box, todo lo que esté adentro del borde (contenido, padding y borde) ocupa el ancho y alto que le damos */
             box-sizing: border-box;
         }
+
+        .container3{
+            width: 150px;
+            height: 150px;
+            background: white;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 36px;
+            /* Overflow -  especifica: si recortar contenido, dibujar barras de desplazamiento(auto, scroll) o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+            overflow: hidden;
+            /* text-overflow - el contenido cuando es texto que se desborda y que no es mostrado, va a hacérsele notar a los usuarios. Puede ser cortado, mostrar una ellipsis o o mostrar una cadena de texto personalizada*/
+            text-overflow: ellipsis;
+        }
     </style>
 
 </head>
@@ -229,6 +242,9 @@
             Modelo de caja2
         </div>
         
+        <section class="container3">
+            CSS is AWESOME
+        </section>
 
         <h2 id="proyectos">Proyectos realizados</h2>
 
